@@ -1,5 +1,5 @@
 {
-  "name": "@ridi-mikro-orm/core",
+  "name": "@mikro-orm-entity-gen/core",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -34,10 +34,6 @@
   ],
   "author": "Martin Adámek",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mikro-orm/mikro-orm/issues"
-  },
-  "homepage": "https://mikro-orm.io",
   "scripts": {
     "bootstrap": "lerna bootstrap && husky install",
     "postinstall": "yarn bootstrap",
