@@ -56,6 +56,7 @@ export class DatabaseTable {
   }
 
   getEntityDeclaration(namingStrategy: NamingStrategy, schemaHelper: SchemaHelper): EntityMetadata {
+  getEntityDeclaration(namingStrategy: NamingStrategy, schemaHelper: SchemaHelper): EntityMetadata {
     const name = namingStrategy.getClassName(this.name, '_');
     const schema = new EntitySchema({ name, collection: this.name });
     const indexes = this.getIndexes();
